@@ -10,4 +10,4 @@ On this project i did elaborated a dynamic background changer. It was very fun t
 * The project has a navbar. (It dances :D check it out!).
 * It was necessary to use the forEach high-order function. 
 * Also the MATH module to generate random values.
-* And the queerySelectAll for the navbar dancing letters.
+* And the queerySelectorAll for the navbar dancing letters.
