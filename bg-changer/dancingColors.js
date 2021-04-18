@@ -1,5 +1,6 @@
 const hexValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
-const btn = document.querySelector("#btnRandom")
+const btnRandom = document.querySelector("#btnRandom")
+const btnStop = document.querySelector("#btnStop")
 const bod = document.querySelector("#bod")
 const bgName = document.querySelector("#bgName")
 const colors = ["aqua","plum", "rebeccapurple", "cadetblue", "burlywood", "indianred", "dodgerblue", "coral", "chocolate", "navajowhite","cornflowerblue", "red","blue", "white", "crimson","gold","forestgreen","purple","cyan","lemonchiffon","yellow"]
@@ -28,8 +29,13 @@ const randomBackgroundColor = () => {
     bgName.innerHTML = color
 }
 
-btn.addEventListener("click", () => {
-    randomBackgroundColor()
-    randomLetterColors()
+btnRandom.addEventListener("click", () => {
+    let inter1, inter2;
+    inter1 = setInterval(randomBackgroundColor, 1000)
+    inter2 = setInterval(randomLetterColors, 100)
+    btnStop.addEventListener("click", () => {
+        clearInterval(inter1)
+        clearInterval(inter2)
+    })
 })
 
