@@ -18,6 +18,9 @@ menuBtns.forEach(btn => {
     })
 })
 
+window.addEventListener("DOMContentLoaded", () => {
+    displayOnScreen(food)
+})
 
 function displayOnScreen(food) {
     let data = food.map(meal => {
