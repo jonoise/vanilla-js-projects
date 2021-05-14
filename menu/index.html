@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Our menu</h1>
+    <div class="food-types">
+      <button data-id="ham" class="menu-btns">Hamburguesas</button>
+      <button data-id="pizza" class="menu-btns">Pizzas</button>
+      <button data-id="taco" class="menu-btns">Tacos</button>
+      <button data-id="shake" class="menu-btns">Shakes</button>
+      <button data-id="postre" class="menu-btns">Postres</button>
+      <button data-id="all" class="menu-btns">All</button>
+  </div>
+    <section class="menu">
+      <!-- CARD START -->
+      <div class="card" style="width: 18rem">
+        <div class="card-img-top">
+          <img src="./images/ham2.jpg" alt="" class="food-img"/>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary form-control">Buy</a>
+        </div>
+      
+      <!-- CARD END -->
+
+      <!-- index.js -->
+      <script type="module" src="index.js"></script>
+      <script type="module" src="data.js"></script>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+  </body>
+</html>

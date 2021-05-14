@@ -1,0 +1,25 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+}
+
+.card-img-top {
+    height: 220px;
+    width: 100%;
+}
+
+.card {
+    min-width: 250px;
+    margin: 25px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
